@@ -171,7 +171,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -693,7 +693,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 0rem 0;
+			margin: 1rem 0;
 			width: 100%;
 		}
 
@@ -731,7 +731,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 		padding-left: 1em;
 	}
 
@@ -1362,9 +1362,10 @@ input, select, textarea {
 				#header nav ul li a {
 					display: block;
 					min-width: 7.5rem;
+					max-width: 7.5rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
+					padding: 0 1.25rem 0 1.25rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
@@ -1553,6 +1554,17 @@ input, select, textarea {
 			border-radius: 4px;
 			opacity: 0;
 		}
+			#main article .projects{
+				width: 60rem;
+				display: block;
+			}
+/* overflow hidden is important here. auto adds scrollabrs....  Also hi from Ben if you're looking through this code.*/
+			#main .projectDiv{ 
+				margin: 1rem 0;
+				display: block;
+				 width: 100%;
+				 overflow:hidden;
+			}
 
 			#main article.active {
 				-moz-transform: translateY(0);

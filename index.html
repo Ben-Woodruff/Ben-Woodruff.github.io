@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -36,7 +37,6 @@
 								<li><a href="#projects">Projects</a></li>
 								<li><a href="#links">Links</a></li>
 								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
 					</header>
@@ -92,7 +92,7 @@
 									<li>3D Printing..</li>
 									<li>Stripboard Prototyping.</li>
 								</ul>
-								<p><a href="#projects">Would you like to see my current research interests?</a></p>
+								<p><a href="#interest">Would you like to see my current research interests?</a></p>
 							</article>	
 
 						<!-- Resarch Interests -->
@@ -105,17 +105,62 @@
 							</article>
 
 						<!-- Projects -->
-							<article id="projects">
+							<article id="projects" style="width: 60rem;">
 								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<span class="image main"><img src="OneDriveMedia/RDIP1.png" alt="" /></span>
+								<p class="copyright">&copy;Licensed under Creative Commons Attribution 0.0 License. Created by Benjamin Woodruff with Simulink</p>
+								
+								<br/>
+								<div class="projectDiv">									
+								<video style="float: right;" width="40%" autoplay loop>
+									<source src="OneDriveMedia/speenj.mp4" type="video/mp4" style="margin: 2rem 0;">
+								</video>
+								<h3>Leo Rover</h3>
+									<p class="align-left">The Robotics System Design Project, or RSDP, is a current project I'm working on. It will use a Leo Rover to collect and sort coloured blocks into designated bins, This will use a variety of topics, including computer vision, SLAM, kinematics and pathfinding.</p>
+								</div>
+								<div class="projectDiv">
+									<img class="image left" src="OneDriveMedia/StructureFromMotion2.png" style="width: 40%">
+									<h3>Structure From Motion</h3>
+									<p class="align-left">A personal project for me. Where I explored the usage of structure from motion using publicly available software online. It was hard to get anything working, since most software uses graphics card acceleration for a lot of the calculations, which I lacked access to. Thankfully I found a version that I could run purely on a CPU, even if it took forever.</p>
+								</div>
+								<div class="projectDiv">
+									<img class="image right" src="OneDriveMedia/GaussianSplatting1.png" style="width: 40%;">
+									<h3>Gaussian Splatting</h3>
+									<p class="align-left">An addition to structure from motion I explored, where based on the data retaining to the images and camera coordinates, the scene can be represented by blobs of colour or gaussians of different sizes in 3d space. Resulting in being able to see the scene from new angles or reconstruct an entire 3D scene from purely 2D images.</p>
+								</div>
+								<div class="projectDiv">
+									<video style="float: left; margin: 0 1rem 0 0; width: 40%;" autoplay muted loop>
+										<source src="OneDriveMedia/Ros2-1.mp4#t=20,80" type="video/mp4">
+									</video>
+									<h3>ROS2</h3>
+									<p class="align-left">I programmed a simple wheeled robot and implemented navigation and obstacale avoidance within ROS2 (Version: Humble). Sending it navigation goals the robot then traversed to while avoiding the items in the way.</p>
+								</div>
+
+								<div class="projectDiv">
+									<img class="image right" src="OneDriveMedia/WESWorkshop2.PNG" style="width: 40%;">
+									<h3>MATLAB Workshop for W.E.S. (Women in Engineering Society)</h3>
+									<p class="align-left">I wanted to try teaching, and last year I was given an oppourtunity to introduce a small class of people to MATLAB, a program I've a lot of experience. Teaching was hard since I had come with a slide-deck on the first session, only to find out there was no where to present them. But I adapted and made adjustments for the next session. The workshop lasted four weeks and we gave everyone who completed it our own unofficial certificate of completion as a reward.</p>
+								</div>
+								<div class="projectDiv">
+									<img class="image left" src="OneDriveMedia/MEngProject2.png" style="width: 40%;">
+									<h3>MEng Project</h3>
+									<p class="align-left">For my MEng Project: as part of a team, we were tasked to create a device that could detect crevasses in an arctic enviroment. We were limited in our resources, so we chose to make a model of a crevasse and use that to determine the best method for detecting cavities. I was team lead and was also responsible for the interfacing between devices. I learnt a lot of non-technical soft skills from this project, namely team management, how to deal with expecations and how to communicate</p>
+								</div>
+								<div class="projectDiv">
+								<video style="float: right; margin: 0 1rem 0 0; width: 40%;" autoplay loop>
+									<source src="OneDriveMedia/RDIP3.mp4" type="video/mp4">
+								</video>
+									<h3>Rotary Double Inverted Pendulum (RDIP)</h3>
+									<p class="align-left">A more controls based and linear alegbra project. This was made using MATLAB, Simulink and an addon called Simscape. I compared the outputs of the simulation to one solved using a set of differential equations that are iterativelty repeated. My project in particular looked at the dynamics when only the bottom angular encoder gave readings, which was unsuprisngly much harder than if you had access to all the system angles. <a href="https://github.com/Ben-Woodruff/MatlabRDIP">If you want to see the Github Repository for this project click here!</a></p>
+								</div>
+								<p><a href="#links">If you want to see if I've posted anything new, check on my GitHub or LinkedIn!</a></p>
 							</article>
 
-						<!-- About -->
+						<!-- Links -->
 							<article id="links">
 								<h2 class="major">Links</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<a href="https://github.com/Ben-Woodruff"><i class="fab fa-github" style="font-size:48px;"></i></a>
+								<a href="https://www.linkedin.com/in/benjaminwoodruff/"><i class="fab fa-linkedin" style="font-size:48px;"></i></a>
 							</article>
 
 
@@ -143,12 +188,6 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
 							</article>
 
 
