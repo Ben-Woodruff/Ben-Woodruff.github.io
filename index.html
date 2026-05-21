@@ -119,51 +119,116 @@
 								<p class="copyright">&copy;Licensed under Creative Commons Attribution 0.0 License. Created by Benjamin Woodruff with Simulink</p>
 								
 								<br/>
-								<div class="projectDiv">									
-								<video style="float: right;" width="40%" autoplay loop>
-									<source src="OneDriveMedia/speenj.mp4" type="video/mp4" style="margin: 2rem 0;">
-								</video>
-								<h3>Leo Rover</h3>
-									<p class="align-left">The Robotics System Design Project, or RSDP, is a current project I'm working on. It will use a Leo Rover to collect and sort coloured blocks into designated bins, This will use a variety of topics, including computer vision, SLAM, kinematics and path finding.</p>
-								</div>
-								<div class="projectDiv">
-									<img class="image left" src="OneDriveMedia/StructureFromMotion2.png" style="width: 40%">
-									<h3>Structure From Motion</h3>
-									<p class="align-left">A personal project for me. Where I explored the usage of structure from motion using publicly available software online. It was hard to get anything working, since most software uses graphics card acceleration for a lot of the calculations, which I lacked access to. Thankfully I found a version that I could run purely on a CPU, even if it took forever.</p>
-								</div>
-								<div class="projectDiv">
-									<img class="image right" src="OneDriveMedia/GaussianSplatting1.png" style="width: 40%;">
-									<h3>Gaussian Splatting</h3>
-									<p class="align-left">An addition to structure from motion I explored, where based on the data retaining to the images and camera coordinates, the scene can be represented by blobs of colour or Gaussians of different sizes in 3d space. Resulting in being able to see the scene from new angles or reconstruct an entire 3D scene from purely 2D images.</p>
-								</div>
-								<div class="projectDiv">
-									<video style="float: left; margin: 0 1rem 0 0; width: 40%;" autoplay muted loop>
-										<source src="OneDriveMedia/Ros2-1.mp4" type="video/mp4">
-									</video>
-									<h3>ROS2</h3>
-									<p class="align-left">I programmed a simple wheeled robot and implemented navigation and obstacle avoidance within ROS2 (Version: Humble). Sending it navigation goals the robot then traversed to while avoiding the items in the way.</p>
-								</div>
+								
+									<ul class="alt">
+										
+										<li style="display: inline-block;">
+											<img class="image right" src="OneDriveMedia/DesignProject.jpeg" style="width: 40%;">
+											<h3>Robotics Systems Design Project</h3>
+											<p><b><u>Goal:</u></b> Design a robot to seek coloured blocks.</p>
+											<p><b><u>Contribution:</u></b> Manipulator Coding, Hardware design.</p>
+											<p class="align-left">The Robotics System Design Project, is a project I was part of, where we as a team made a colour seeking robot. I was in charge of many different things like coding the manipulator, systems intergration, mechanical design and communication!</p>
+											<p><i class="fab fa-github" style="font-size:16x;"></i><a href="https://github.com/UoMTeam3/Autonomous-Color-Object-Retrieval-Robot"> If you want to see the Github Repository for this project click here!</a></p>
+										</li>
 
-								<div class="projectDiv">
-									<img class="image right" src="OneDriveMedia/WESWorkshop2.PNG" style="width: 40%;">
-									<h3>MATLAB Workshop for W.E.S. (Women in Engineering Society)</h3>
-									<p class="align-left">Last year I was given an opportunity to introduce a small class of people to MATLAB, a program I've a lot of experience. Teaching was hard since I had come with a slide-deck on the first session, only to find out there was no where to present them. But I adapted and made adjustments for the next session. The workshop lasted four weeks and we gave everyone who completed it our own unofficial certificate of completion as a reward.</p>
-								</div>
-								<div class="projectDiv">
-									<img class="image left" src="OneDriveMedia/MEngProject2.png" style="width: 40%;">
-									<h3>MEng Project</h3>
-									<p class="align-left">For my MEng Project: as part of a team, we were tasked to create a device that could detect crevasses in an arctic environment. We were limited in our resources, so we chose to make a model of a crevasse and use that to determine the best method for detecting cavities. I was team lead and was also responsible for the interfacing between devices. I learnt a lot of non-technical soft skills from this project, namely team management, how to deal with expectations and how to communicate</p>
-								</div>
-								<div class="projectDiv">
-								<video style="float: right; margin: 0 1rem 0 0; width: 40%;" autoplay loop>
-									<source src="OneDriveMedia/RDIP3.mp4" type="video/mp4">
-								</video>
-									<h3>Rotary Double Inverted Pendulum (RDIP)</h3>
-									<p class="align-left">A more controls based and linear algebra project. This was made using MATLAB, Simulink and an addon called Simscape. I compared the outputs of the simulation to one solved using a set of differential equations that are iteratively repeated. My project in particular looked at the dynamics when only the bottom angular encoder gave readings, which was unsurprisingly much harder than if you had access to all the system angles. <a href="https://github.com/Ben-Woodruff/MatlabRDIP">If you want to see the Github Repository for this project click here!</a></p>
-								</div>
-								<p><a href="https://github.com/Ben-Woodruff/Ben-Woodruff.github.io">You can also see the code for <b>this web page</b> here!</a></p>
+										<li style="display: inline-block;">
+											<video style="float: left; margin-right: 1rem;" width="40%" autoplay muted loop>
+												<source src="OneDriveMedia/LeoRover_Intro(1).mp4" type="video/mp4" style="margin: 2rem 0;">
+											</video>
+											<h3>Design Project Promotional Video</h3>
+											<p><b><u>Goal:</u></b> Create a Promotional Video for our Robot.</p>
+											<p><b><u>Contribution:</u></b> Robot Rendering, Video Recording.</p>
+											<p class="align-left"> A video we worked on together as a team. It shows off our robot, though the project also was a lot about teamwork and how to manage conflict.</p>
+											<p><a href="OneDriveMedia/LeoRover_Intro(1).mp4">If you want to download this video click here!</a></p>
+										</li>
 
-								<p><a href="#links">If you want to see if I've posted anything new that I forget to add here, check on my GitHub or LinkedIn!</a></p>
+										<li style="display: inline-block;">
+											<img class="image right" src="OneDriveMedia/recording_horizon_15.gif" style="width: 40%;">
+											<h3>Feedback Control</h3>
+											<p><b><u>Goal:</u></b> Create a control Algorithm for a drone.</p>
+											<p><b><u>Contribution:</u></b> As part of a team, helped deisgn and test the code.</p>
+											<p class="align-left">As part of a team I helped with controlling a drone! We got our code put into an actual drone and it went pretty well! (Once we sorted out the errors). Very enjoyable.</p>
+											<p><i class="fab fa-github" style="font-size:16x;"></i><a href="https://github.com/foty-hub/amr_3">If you want to see the Github Repository for this project click here!</a></p>
+										</li>
+
+										<li style="display: inline-block;">
+											<img class="image left" src="OneDriveMedia/AStar.png" style="width: 40%;">
+											<h3>A* Algorithm</h3>
+											<p><b><u>Goal:</u></b> Using a premade GUI, code the A* Algorithm from scratch using no modules.</p>
+											<p><b><u>Contribution:</u></b> Created the Algorithm. </p>
+											<p class="align-left">I was tasked with creating A star from scratch! No libraries allowed! Just the original paper detailing A Star, though that doesn't mean I didn't make my own improvements! (Open and closed set have a lot of overlap you can eliminate)</p>
+											<p><a href="OneDriveMedia/AStar.zip">If you want to download the zip folder this project click here!</a></p>
+										</li>
+
+										<li style="display: inline-block;">
+											<video style="float: right;" width="40%" autoplay muted loop>
+												<source src="OneDriveMedia/SustainableDevelopmentGoalsVideo.mp4" type="video/mp4" style="margin: 2rem 0;">
+											</video>
+											<h3>Sustainable Development Goals Video</h3>
+											<p><b><u>Goal:</u></b> Create a video explaining the UN sustainable Development goals.</p>
+											<p><b><u>Contribution:</u></b> Made, voiced and edited the video.</p>
+											<p class="align-left">A video I made regarding the sustainable development goals and how they are associated with robotics. This was more about science communication than being perfectly sustainable, but it was interesting to learn how I might help sustainability in the future.</p>
+											<p><a href="OneDriveMedia/SustainableDevelopmentGoalsVideo.mp4">If you want to see the video click here! (It's also playing on the right) </a></p>
+										</li>
+										
+										<li style="display: inline-block;">
+											
+											<img class="image left" src="OneDriveMedia/StructureFromMotion2.png" style="width: 40%">
+											<h3>Structure From Motion</h3>
+											<p><b><u>Goal:</u></b> Test out available structure from motion code.</p>
+											<p><b><u>Contribution:</u></b> Downloaded and ran the code (see Github below), took videos.</p>
+											<p class="align-left">A personal project for me. Where I explored the usage of structure from motion using publicly available software online. It was hard to get anything working, since most software uses graphics card acceleration for a lot of the calculations, which I lacked access to. Thankfully I found a version that I could run purely on a CPU, even if it took forever.</p>
+											<p><i class="fab fa-github" style="font-size:16px;"></i><a href="https://github.com/OpenDroneMap/ODM"> If you want to see the Github Repository I used for this project click here!</a></p>
+										</li>
+										<li style="display: inline-block;">
+											<img class="image right" src="OneDriveMedia/GaussianSplatting1.png" style="width: 40%;">
+											<h3>Gaussian Splatting</h3>
+											<p><b><u>Goal:</u></b> Test out available gaussian splatting code.</p>
+											<p><b><u>Contribution:</u></b> Downloaded and ran the code (see Github below), proccessed images.</p>
+											<p class="align-left">An addition to structure from motion I explored, where based on the data retaining to the images and camera coordinates, the scene can be represented by blobs of colour or gaussians of different sizes in 3d space. Resulting in being able to see the scene from new angles or reconstruct an entire 3D scene from purely 2D images.</p>
+											<p><i class="fab fa-github" style="font-size:16px;"></i><a href="https://github.com/playcanvas/supersplat"> If you want to see the Github Repository I used for this project click here! (It also has the banana data on it if you would like to use that!)</a></p>
+										</li>
+										<li style="display: inline-block;">
+											<video style="float: left; margin: 0 1rem 0 0; width: 40%;" autoplay muted loop>
+											<source src="OneDriveMedia/Ros2-1.mp4#t=20,80" type="video/mp4">
+											</video>
+											<h3>ROS2</h3>
+											<p><b><u>Goal:</u></b> Follow the tutorial to construct a basic navigating robot.</p>
+											<p><b><u>Contribution:</u></b> Made, ran and controlled the basic wheeled robot.</p>
+											<p class="align-left">I programmed a simple wheeled robot and implemented navigation and obstacale avoidance within ROS2 (Version: Humble). Sending it navigation goals the robot then traversed to while avoiding the items in the way.</p>
+											<p><a href="https://ros2-tutorial.readthedocs.io/en/latest/navigation/usage.html">If you want to follow the documentation I followed for this project click here!</a></p>
+											<p><i class="fab fa-github" style="font-size:16px;"></i><a href="https://github.com/mmmarinho/ROS2_Tutorial"> If you just want the Github Repository instead click here!</a></p>
+										</li>
+										<li style="display: inline-block;">
+											<img class="image right" src="OneDriveMedia/WESWorkshop2.PNG" style="width: 40%;">
+											<h3>MATLAB Workshop for W.E.S. (Women in Engineering Society)</h3>
+											<p><b><u>Goal:</u></b> Host a series of workshops on MATLAB to help those from diverse backgrounds.</p>
+											<p><b><u>Contribution:</u></b> I was the sole host, preparing material each week alongside providing help and assistance during the sessions.</p>
+											<p class="align-left">I wanted to try teaching, and last year I was given an oppourtunity to introduce a small class of people to MATLAB, a program I've a lot of experience. Teaching was hard since I had come with a slide-deck on the first session, only to find out there was no where to present them. But I adapted and made adjustments for the next session. The workshop lasted four weeks and we gave everyone who completed it our own unofficial certificate of completion as a reward.</p>
+										</li>
+										<li style="display: inline-block;">
+											<img class="image left" src="OneDriveMedia/MEngProject2.png" style="width: 40%;">
+											<h3>MEng Project</h3>
+											<p><b><u>Goal:</u></b> Design a model of a crevasse and determine the optimal design for a radar.</p>
+											<p><b><u>Contribution:</u></b> Team Leader, Systems Intregration.</p>
+											<p class="align-left">For my MEng Project: as part of a team, we were tasked to create a device that could detect crevasses in an arctic enviroment. We were limited in our resources, so we chose to make a model of a crevasse and use that to determine the best method for detecting cavities. I was team lead and was also responsible for the interfacing between devices. I learnt a lot of non-technical soft skills from this project, namely team management, how to deal with expecations and how to communicate</p>
+											<p><i class="fa-solid fa-copy" style="font-size:16px;"></i><a href="OneDriveMedia/Appendix L_2 - Final Report Team 1.pdf"> If you want to see the report for this project click here!</a></p>
+											
+										</li>
+										<li style="display: inline-block;">
+										<video style="float: right; margin: 0 1rem 0 0; width: 40%;" autoplay loop>
+											<source src="OneDriveMedia/RDIP3.mp4" type="video/mp4">
+										</video>
+											<h3>Rotary Double Inverted Pendulum (RDIP)</h3>
+											<p><b><u>Goal:</u></b> Inspect how control for a double rotary inverted pendulum differs when sensing is limited.</p>
+											<p><b><u>Contribution:</u></b> Sole contributor, wrote simulation & control.</p>
+											<p class="align-left">A more controls based and linear alegbra project. This was made using MATLAB, Simulink and an addon called Simscape. I compared the outputs of the simulation to one solved using a set of differential equations that are iterativelty repeated. My project in particular looked at the dynamics when only the bottom angular encoder gave readings, which was unsuprisngly much harder than if you had access to all the system angles. <a href="https://github.com/Ben-Woodruff/MatlabRDIP">If you want to see the Github Repository for this project click here!</a></p>
+											
+										</li>
+										<li style="display: inline-block;">
+											<p><a href="#links">If you want to see if I've posted anything new, check on my GitHub or LinkedIn!</a></p>
+										</li>
+								</ul>
 							</article>
 
 						<!-- Links -->
